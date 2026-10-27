@@ -15,9 +15,9 @@
   </nav>
 
   <h1>Privacy policy of the Family app</h1>
-  <p class="updated">Last updated: 17 October 2026</p>
+  <p class="updated">Last updated: 27 October 2026</p>
 
-  <p>Family is an app to organise a family: tasks, shopping lists, staples, home papers and the medicines at home. This page explains which personal data the app uses, why, who receives it, and what your rights are.</p>
+  <p>Family is an app to organise a family: tasks, shopping lists, staples, home papers, the medicines at home and the kitchen (week menu and recipes). This page explains which personal data the app uses, why, who receives it, and what your rights are.</p>
 
   <h2>1. Who is responsible for your data</h2>
   <p>Stephane Carbonnier (Keapps), Alicante, Spain.<br>
@@ -27,6 +27,8 @@
   <ul>
     <li><strong>Account:</strong> your email address, your name and your password. The password is stored in encrypted form only.</li>
     <li><strong>Family data:</strong> the families you create or join, your role, and what you or your family add: tasks, shopping lists and items, staples, home papers and their key dates, and medicines with their expiry date and the people who take them.</li>
+    <li><strong>Kitchen:</strong> the people who eat at home (a name and, if you want, what they like, the ingredients they do not eat and a food goal; a child needs no account), the kitchen appliances, the recipes you save, your ratings, the week menu and the photo of a finished dish. The app does not ask for allergies or intolerances: do not write health information in these free fields. The photo of a finished dish is stored in a private space that only the members of your family can open.</li>
+    <li><strong>Recipe links and photos:</strong> when you import a recipe from a web link, our server downloads that public page. When you import a recipe from photos, the photos are sent to our server. We do not keep the photos used to read a recipe. We keep the recipe that results.</li>
     <li><strong>Voice commands:</strong> speech recognition runs on your phone. <strong>The audio never leaves your phone.</strong> If your family has a subscription, the recognised text is sent to our server to find the task or the shopping items in it. The server does not store or log this text.</li>
     <li><strong>Notifications:</strong> a notification token for each phone where you are signed in, its platform and its language, and your reminder settings.</li>
     <li><strong>Crash reports:</strong> when the app crashes, a report with the error, the app version, the phone model, the operating system version and a random installation identifier.</li>
@@ -47,6 +49,8 @@
     <li><strong>Supabase</strong> hosts the accounts and the database, in the European Union (Ireland).</li>
     <li><strong>Google Firebase</strong> delivers notifications (Firebase Cloud Messaging) and collects crash reports (Firebase Crashlytics).</li>
     <li><strong>Anthropic</strong> receives the text of a voice command, with the first names of your family members, only when your family has a subscription. It returns the task or the items found in the text. Under its commercial terms, Anthropic does not use this text to train its models.</li>
+    <li><strong>Anthropic</strong> also receives data for the kitchen: the text of a recipe page or the photos of a recipe that you import and, only when your family has a subscription, the data for ideas, for the cooking day and for an alternative for a person (recipe titles and ingredients, the appliances, and what a person likes or does not eat, <strong>without the name</strong> of that person). It returns the recipe in a structured form or the proposals. The same terms apply.</li>
+    <li><strong>Other families:</strong> if you share a shopping list with another family, the members of that family see this list.</li>
   </ul>
   <p>These companies process the data only on our behalf. Some of them can process it outside the European Union, for example in the United States. In that case the transfer is covered by the European Commission's standard contractual clauses or by the EU–US Data Privacy Framework.</p>
 
@@ -56,12 +60,14 @@
     <li>Finished tasks: deleted automatically about 30 days after their date.</li>
     <li>Shopping history (used to suggest items): up to 180 days.</li>
     <li>Voice command counters (used for limits): 2 days.</li>
+    <li>Recipe import counters (used for the monthly limit): the current month.</li>
+    <li>Photos used to read a recipe: not kept. Photos of finished dishes: until you delete them, or delete the dish, your family or your account.</li>
     <li>Notification tokens: until you sign out on that phone or delete your account.</li>
     <li>Crash reports: up to 90 days, at Firebase.</li>
   </ul>
 
   <h2>6. Deleting your account</h2>
-  <p>In the app, open <strong>Settings → Delete my account</strong>. This deletes your account, your email address and your name, your notification tokens and your reminder settings. You leave all your families. A family where you were the only member is deleted. What you added to a family that has other members stays in that family, but it is no longer linked to you.</p>
+  <p>In the app, open <strong>Settings → Delete my account</strong>. This deletes your account, your email address and your name, your notification tokens and your reminder settings. If a person of the kitchen was linked to your account, the link is removed. You leave all your families. A family where you were the only member is deleted. What you added to a family that has other members stays in that family, but it is no longer linked to you.</p>
   <p>If you cannot open the app, send an email to <a href="mailto:stephane.keapp@gmail.com">stephane.keapp@gmail.com</a> from the address of your account and we delete it for you.</p>
 
   <h2>7. Your rights</h2>
@@ -69,7 +75,7 @@
   <p>You can also complain to the Spanish data protection authority, the <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
   <h2>8. Children</h2>
-  <p>A child under 14 must not create an account without the consent of a parent or guardian.</p>
+  <p>A child under 14 must not create an account without the consent of a parent or guardian. A parent can add a child as a person of the kitchen, without an account. The parent is responsible for this data and enters only what is needed to plan meals.</p>
 
   <h2>9. Security</h2>
   <p>Data travels encrypted (HTTPS). In the database, each family can read only its own data.</p>

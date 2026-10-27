@@ -15,9 +15,9 @@
   </nav>
 
   <h1>Política de privacidad de la app Family</h1>
-  <p class="updated">Última actualización: 17 de octubre de 2026</p>
+  <p class="updated">Última actualización: 27 de octubre de 2026</p>
 
-  <p>Family es una app para organizar una familia: tareas, listas de la compra, productos habituales, papeles de casa y los medicamentos que hay en casa. Esta página explica qué datos personales usa la app, para qué, quién los recibe y cuáles son tus derechos.</p>
+  <p>Family es una app para organizar una familia: tareas, listas de la compra, productos habituales, papeles de casa, los medicamentos que hay en casa y la cocina (menú de la semana y recetas). Esta página explica qué datos personales usa la app, para qué, quién los recibe y cuáles son tus derechos.</p>
 
   <h2>1. Responsable de tus datos</h2>
   <p>Stephane Carbonnier (Keapps), Alicante, España.<br>
@@ -27,6 +27,8 @@
   <ul>
     <li><strong>Cuenta:</strong> tu correo electrónico, tu nombre y tu contraseña. La contraseña solo se guarda cifrada.</li>
     <li><strong>Datos de la familia:</strong> las familias que creas o a las que te unes, tu rol, y lo que tú o tu familia añadís: tareas, listas de la compra y sus artículos, productos habituales, papeles de casa y sus fechas clave, y medicamentos con su fecha de caducidad y las personas que los toman.</li>
+    <li><strong>Cocina:</strong> las personas que comen en casa (un nombre y, si quieres, lo que les gusta, los ingredientes que no comen y un objetivo de alimentación; un niño no necesita cuenta), los electrodomésticos de cocina, las recetas que guardas, tus valoraciones, el menú de la semana y la foto de un plato terminado. La app no pide alergias ni intolerancias: no escribas información de salud en estos campos libres. La foto de un plato terminado se guarda en un espacio privado que solo pueden abrir los miembros de tu familia.</li>
+    <li><strong>Enlaces y fotos de recetas:</strong> cuando importas una receta desde un enlace web, nuestro servidor descarga esa página pública. Cuando importas una receta desde fotos, las fotos se envían a nuestro servidor. No guardamos las fotos usadas para leer una receta. Guardamos la receta resultante.</li>
     <li><strong>Comandos de voz:</strong> el reconocimiento de voz funciona en tu teléfono. <strong>El audio nunca sale de tu teléfono.</strong> Si tu familia tiene una suscripción, el texto reconocido se envía a nuestro servidor para encontrar la tarea o los artículos de la compra. El servidor no guarda ni registra este texto.</li>
     <li><strong>Notificaciones:</strong> un identificador de notificaciones por cada teléfono donde has iniciado sesión, su plataforma y su idioma, y tus ajustes de recordatorios.</li>
     <li><strong>Informes de errores:</strong> cuando la app falla, un informe con el error, la versión de la app, el modelo del teléfono, la versión del sistema y un identificador aleatorio de instalación.</li>
@@ -47,6 +49,8 @@
     <li><strong>Supabase</strong> aloja las cuentas y la base de datos, en la Unión Europea (Irlanda).</li>
     <li><strong>Google Firebase</strong> envía las notificaciones (Firebase Cloud Messaging) y recoge los informes de errores (Firebase Crashlytics).</li>
     <li><strong>Anthropic</strong> recibe el texto de un comando de voz, con los nombres de los miembros de tu familia, solo cuando tu familia tiene una suscripción. Devuelve la tarea o los artículos que encuentra en el texto. Según sus condiciones comerciales, Anthropic no usa este texto para entrenar sus modelos.</li>
+    <li><strong>Anthropic</strong> también recibe datos para la cocina: el texto de una página de receta o las fotos de una receta que importas y, solo cuando tu familia tiene una suscripción, los datos para las ideas, para el día de cocina y para una alternativa para una persona (títulos e ingredientes de recetas, los electrodomésticos, y lo que le gusta o no come una persona, <strong>sin el nombre</strong> de esa persona). Devuelve la receta de forma estructurada o las propuestas. Se aplican las mismas condiciones.</li>
+    <li><strong>Otras familias:</strong> si compartes una lista de la compra con otra familia, los miembros de esa familia ven esta lista.</li>
   </ul>
   <p>Estas empresas solo tratan los datos por cuenta nuestra. Algunas pueden tratarlos fuera de la Unión Europea, por ejemplo en Estados Unidos. En ese caso, la transferencia está cubierta por las cláusulas contractuales tipo de la Comisión Europea o por el Marco de Privacidad de Datos UE–EE. UU.</p>
 
@@ -56,12 +60,14 @@
     <li>Tareas terminadas: se eliminan automáticamente unos 30 días después de su fecha.</li>
     <li>Historial de la compra (para sugerir artículos): hasta 180 días.</li>
     <li>Contadores de comandos de voz (para los límites): 2 días.</li>
+    <li>Contadores de importación de recetas (para el límite mensual): el mes en curso.</li>
+    <li>Fotos usadas para leer una receta: no se guardan. Fotos de platos terminados: hasta que las eliminas, o eliminas el plato, tu familia o tu cuenta.</li>
     <li>Identificadores de notificaciones: hasta que cierras sesión en ese teléfono o eliminas tu cuenta.</li>
     <li>Informes de errores: hasta 90 días, en Firebase.</li>
   </ul>
 
   <h2>6. Eliminar tu cuenta</h2>
-  <p>En la app, abre <strong>Ajustes → Eliminar mi cuenta</strong>. Se eliminan tu cuenta, tu correo electrónico y tu nombre, tus identificadores de notificaciones y tus ajustes de recordatorios. Sales de todas tus familias. Una familia en la que eras el único miembro se elimina. Lo que añadiste a una familia con otros miembros se queda en esa familia, pero ya no está vinculado a ti.</p>
+  <p>En la app, abre <strong>Ajustes → Eliminar mi cuenta</strong>. Se eliminan tu cuenta, tu correo electrónico y tu nombre, tus identificadores de notificaciones y tus ajustes de recordatorios. Si una persona de la cocina estaba vinculada a tu cuenta, se elimina el vínculo. Sales de todas tus familias. Una familia en la que eras el único miembro se elimina. Lo que añadiste a una familia con otros miembros se queda en esa familia, pero ya no está vinculado a ti.</p>
   <p>Si no puedes abrir la app, envía un correo a <a href="mailto:stephane.keapp@gmail.com">stephane.keapp@gmail.com</a> desde la dirección de tu cuenta y la eliminamos por ti.</p>
 
   <h2>7. Tus derechos</h2>
@@ -69,7 +75,7 @@
   <p>También puedes presentar una reclamación ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
   <h2>8. Menores</h2>
-  <p>Un menor de 14 años no debe crear una cuenta sin el consentimiento de su madre, padre o tutor.</p>
+  <p>Un menor de 14 años no debe crear una cuenta sin el consentimiento de su madre, padre o tutor. Un padre o una madre puede añadir a un niño como persona de la cocina, sin cuenta. Quien lo añade es responsable de estos datos y solo introduce lo necesario para planificar las comidas.</p>
 
   <h2>9. Seguridad</h2>
   <p>Los datos viajan cifrados (HTTPS). En la base de datos, cada familia solo puede leer sus propios datos.</p>
